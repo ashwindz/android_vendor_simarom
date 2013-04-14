@@ -7,7 +7,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
-    ro.setupwizard.enterprise_mode=1
+    ro.setupwizard.enterprise_mode=1 \
+    persist.sys.root_access=3
 
 # Don't worry about camera flash unless the device supports it
 ifeq ($(filter sm_grouper sm_tilapia ,$(TARGET_PRODUCT)),)
@@ -16,10 +17,12 @@ ifeq ($(filter sm_grouper sm_tilapia ,$(TARGET_PRODUCT)),)
 endif
 
 # Enable ADB authentication
-PRODUCT_PROPERTY_OVERRIDES += ro.adb.secure=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=1
 
 # Overlay common
-PRODUCT_PACKAGE_OVERLAYS += vendor/sm/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += \
+   vendor/sm/overlay/common
 
 # Superuser koush
 SUPERUSER_EMBEDDED := true
