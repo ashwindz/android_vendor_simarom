@@ -99,8 +99,8 @@ PRODUCT_COPY_FILES += \
 -include vendor/sm/configs/themes_common.mk
 
 # Rom Manager and Goomanager build.prop overrides
--include vendor/goomanager/goomanager-vendor.mk)
--include vendor/RM/rm-vendor.mk)
+-include vendor/goomanager/goomanager-vendor.mk
+-include vendor/RM/rm-vendor.mk
 
 # video files and extra camera effects
--include frameworks/base/data/videos/VideoPackage2.mk)
+-include frameworks/base/data/videos/VideoPackage2.mk
