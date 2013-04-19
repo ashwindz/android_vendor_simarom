@@ -1,3 +1,6 @@
+# GCC 4.8 SaberMod Toolchain
+USE_SABERMOD_ANDROIDEABI_48 := true
+
 # build.prop property overrides common
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
