@@ -18,7 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occ
 
 # Extra packages specific to Mako
 PRODUCT_PACKAGES += \
-    GalleryGoogleMako \
+    GalleryGoogle-mako \
     Torch
 
 # APN list
