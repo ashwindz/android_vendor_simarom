@@ -13,12 +13,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     persist.sys.root_access=3
 
-# Don't worry about camera flash unless the device supports it
-ifeq ($(filter sm_grouper sm_tilapia ,$(TARGET_PRODUCT)),)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        camera.flash_off=0
-endif
-
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=1
