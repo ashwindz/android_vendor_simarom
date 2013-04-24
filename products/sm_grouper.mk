@@ -15,6 +15,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/na
 
 # Extra packages specific to Grouper
 PRODUCT_PACKAGES += \
+    Gallery2 \
     GalleryGoogle-n7
 
 # Boot animations
