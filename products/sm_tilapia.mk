@@ -17,7 +17,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasig BUILD_FINGERPRINT="google/n
 
 # Extra packages specific to Grouper
 PRODUCT_PACKAGES += \
-    GalleryGoogle-n7
+    GalleryGoogle-n7 \
+    VideoEditor \
+    libvideoeditor_jni \
+    libvideoeditor_core \
+    libvideoeditor_osal \
+    libvideoeditor_videofilters \
+    libvideoeditorplayer
 
 # Extra Required SaberMod packages
 PRODUCT_PACKAGES += \
