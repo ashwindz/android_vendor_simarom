@@ -49,3 +49,12 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
     vendor/sm/prebuilts/mako/system/lib/libvideoeditor_videofilters.so:system/lib/libvideoeditor_videofilters.so \
     vendor/sm/prebuilts/mako/system/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so
+
+# extra mako init.d scripts
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/mako/system/etc/init.d/01gallery:system/etc/init.d/01gallery
+
+# # remount scripts for system
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/mako/system/etc/mount-rw:system/etc/mount-rw \
+    vendor/sm/prebuilts/mako/system/etc/mount-ro:system/etc/mount-ro
