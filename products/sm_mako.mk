@@ -35,3 +35,16 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
     vendor/sm/prebuilts/mako/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko
 endif
+
+#Prebuilt libs
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/mako/system/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
+    vendor/sm/prebuilts/mako/system/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
+    vendor/sm/prebuilts/mako/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
+    vendor/sm/prebuilts/mako/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
+    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
+    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
+    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_osal.so:system/lib/libvideoeditor_osal.so \
+    vendor/sm/prebuilts/mako/system/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
+    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_videofilters.so:system/lib/libvideoeditor_videofilters.so \
+    vendor/sm/prebuilts/mako/system/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so
