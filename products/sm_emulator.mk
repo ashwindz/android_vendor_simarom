@@ -2,7 +2,7 @@
 $(call inherit-product, build/target/product/sdk.mk)
 
 # Inherit common config files.
- $(call inherit-product, vendor/sm/config/common.mk)
+ $(call inherit-product, vendor/sm/configs/common.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := sm_emulator
