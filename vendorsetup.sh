@@ -6,3 +6,5 @@ add_lunch_combo sm_mako-userdebug
 add_lunch_combo sm_mako_user
 add_lunch_combo sm_tilapia-userdebug
 add_lunch_combo sm_tilapia-user
+add_lunch_combo sm_d2spr-userdebug
+add_lunch_combo sm_d2spr-user
