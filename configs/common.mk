@@ -52,8 +52,6 @@ PRODUCT_PACKAGES += \
     libjackpal-androidterm4 \
     libssh \
     LockClock \
-    Music \
-    MusicFX \
     nano \
     openvpn \
     powertop \
