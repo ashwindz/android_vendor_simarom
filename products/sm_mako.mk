@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/lib/libvideoeditor_videofilters.so:system/lib/libvideoeditor_videofilters.so \
     vendor/sm/prebuilts/mako/system/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so
 
+#hybrid
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/mako/system/etc/hybrid_mako.conf:system/etc/beerbong/properties.conf
+
 # extra mako init.d scripts
 PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/etc/init.d/01gallery:system/etc/init.d/01gallery
