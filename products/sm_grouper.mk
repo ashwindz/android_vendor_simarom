@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     libvideoeditor_videofilters \
     libvideoeditorplayer
 
+#hybrid
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/grouper/system/etc/hybrid_grouper.conf:system/etc/beerbong/properties.conf
+
 # Boot animations
 PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/grouper/system/media/bootanimation.zip:system/media/bootanimation.zip \
