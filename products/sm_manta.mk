@@ -4,6 +4,10 @@ $(call inherit-product, device/samsung/manta/full_manta.mk)
 # Inherit SaberMod common_tablet bits
 $(call inherit-product, vendor/sm/configs/common_tablet.mk)
 
+# Inherit SaberMod manta overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/sm/overlay/manta
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := sm_manta
 PRODUCT_DEVICE := manta
