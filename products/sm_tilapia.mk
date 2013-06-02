@@ -4,6 +4,10 @@ $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 # Inherit SaberMod common_tablet bits
 $(call inherit-product, vendor/sm/configs/common_tablet.mk)
 
+# Inherit tilapia overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/sm/overlay/tilapia
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := sm_tilapia
 PRODUCT_DEVICE := tilapia

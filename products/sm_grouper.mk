@@ -4,6 +4,10 @@ $(call inherit-product, device/asus/grouper/full_grouper.mk)
 # Inherit SaberMod common_tablet bits
 $(call inherit-product, vendor/sm/configs/common_tablet.mk)
 
+# Inherit grouper overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/sm/overlay/grouper
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := sm_grouper
 PRODUCT_DEVICE := grouper
