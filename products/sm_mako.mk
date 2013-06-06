@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
     vendor/sm/prebuilts/mako/system/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
     vendor/sm/prebuilts/mako/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
+    vendor/sm/prebuilts/mako/system/lib/liblightcycle.so:system/lib/liblightcycle.so \
     vendor/sm/prebuilts/mako/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/sm/prebuilts/mako/system/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
     vendor/sm/prebuilts/mako/system/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
