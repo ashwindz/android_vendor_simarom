@@ -47,3 +47,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/manta/system/etc/mount-rw:system/etc/mount-rw \
     vendor/sm/prebuilts/manta/system/etc/mount-ro:system/etc/mount-ro
+
+ifeq ($(USING_BUILD_SCRIPTS),true)
+# kernel modules
+PRODUCT_COPY_FILES += \
+    vendor/sm/prebuilts/manta/system/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    vendor/sm/prebuilts/manta/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
+    vendor/sm/prebuilts/manta/system/lib/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
+    vendor/sm/prebuilts/manta/system/lib/modules/hid-logitech-dj.ko:system/lib/modules/hid-logitech-dj.ko \
+    vendor/sm/prebuilts/manta/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+endif
