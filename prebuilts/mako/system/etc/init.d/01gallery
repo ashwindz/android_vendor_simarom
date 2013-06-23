@@ -17,7 +17,7 @@
 # Check for double galleries and remove if needed
 if [ -e /system/app/GalleryGoogle.apk ];
 then
-    if [ -e /system/app/GalleryGoogle-mako ];
+    if [ -e /system/app/GalleryGoogle-mako.apk ];
     then
 
         # Multipule Galleries found, removing non-ROM one
