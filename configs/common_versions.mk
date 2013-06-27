@@ -16,7 +16,7 @@ ifeq ($(SM_EXPERIMENTAL),1)
 endif
 ifeq ($(SM_RELEASE),I_AM_SABERMOD)
     SM_BUILDTYPE := RELEASE
-    SM_BUILD := RC3
+    SM_BUILD := RC4
 endif
 
 ifdef SM_BUILDTYPE
