@@ -1,3 +1,5 @@
+USE_MORE_OPT_FLAGS := yes
+
 # Inherit AOSP device configuration for grouper.
 $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
