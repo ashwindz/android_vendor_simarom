@@ -5,6 +5,8 @@ on init
     export TERM linux
 
 on post-fs-data
+    mkdir /data/.ssh 0750 root shell
+
     # Run sysinit
     start sysinit
 
