@@ -40,6 +40,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Apollo \
+    audio_effects.conf \
     bash \
     Basic \
     CMFileManager \
