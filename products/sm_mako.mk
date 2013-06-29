@@ -59,3 +59,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/etc/mount-rw:system/etc/mount-rw \
     vendor/sm/prebuilts/mako/system/etc/mount-ro:system/etc/mount-ro
+
+# mako audio
+-include frameworks/base/data/sounds/AudioPackage10.mk
