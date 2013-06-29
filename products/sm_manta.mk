@@ -57,3 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/manta/system/lib/modules/hid-logitech-dj.ko:system/lib/modules/hid-logitech-dj.ko \
     vendor/sm/prebuilts/manta/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 endif
+
+# manta audio
+-include frameworks/base/data/sounds/AudioPackage9.mk
