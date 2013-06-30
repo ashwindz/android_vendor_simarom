@@ -15,7 +15,7 @@
 # limitations under the License.
 # Scirpt by Paul Beeler (SparksCo)
 # Check for double galleries and remove if needed
-if [ -e /system/app/GalleryGoogle.apk ] || [ -e /system/app/GalleryGoogle-mako.apk ];
+if [ -e /system/app/GalleryGoogle.apk ] && [ -e /system/app/GalleryGoogle-mako.apk ];
 then
     # Multipule Galleries found, removing non-ROM one
     busybox sh /etc/mount-rw
@@ -24,7 +24,7 @@ then
 fi;
 
 # Check for double video editors
-if [ -e /system/app/VideoEditorGoogle.apk ] || [ -e /system/app/VideoEditorGoogle-mako.apk ];
+if [ -e /system/app/VideoEditorGoogle.apk ] && [ -e /system/app/VideoEditorGoogle-mako.apk ];
 then
     # Multipule video editors found, removing non-ROM one
     busybox sh /etc/mount-rw
