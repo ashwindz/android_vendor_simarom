@@ -9,4 +9,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.tmobile.themes \
     ThemeChooser \
-    ThemeManager
+    ThemeManager \
+    THB
