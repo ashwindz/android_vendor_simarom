@@ -19,4 +19,7 @@
     <!-- Volume Rocker Wake -->
     <bool name="config_show_volume_rocker_wake">false</bool>
 
+    <!-- Dual pane settings -->
+    <bool name="config_show_user_interface_dual_pane">true</bool>
+
 </resources>
