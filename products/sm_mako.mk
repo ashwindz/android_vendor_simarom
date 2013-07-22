@@ -1,9 +1,6 @@
 # Build with SELinux
 HAVE_SELINUX := true
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
 # Inherit AOSP device configuration for grouper.
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
@@ -25,7 +22,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occ
 # Extra packages specific to Mako
 PRODUCT_PACKAGES += \
     GalleryGoogle-mako \
-    SEAndroidAdmin \
     VideoEditorGoogle-mako \
     Torch
 
