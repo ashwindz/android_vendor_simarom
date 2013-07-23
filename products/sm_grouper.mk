@@ -1,3 +1,6 @@
+# Build with SELinux
+HAVE_SELINUX := true
+
 USE_MORE_OPT_FLAGS := yes
 
 # Inherit AOSP device configuration for grouper.
