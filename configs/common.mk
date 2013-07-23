@@ -24,7 +24,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     SEAndroidAdmin \
     sepolicy \
-    file_contexts \
     seapp_contexts \
     property_contexts \
     selinux-network.sh \
