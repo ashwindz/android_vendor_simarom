@@ -20,15 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ifeq ($(HAVE_SELINUX),true)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
-
-PRODUCT_PACKAGES += \
-    SEAndroidAdmin \
-    sepolicy \
-    file_contexts \
-    seapp_contexts \
-    property_contexts \
-    selinux-network.sh \
-    mac_permissions.xml
 endif
 
 # Overlay common
