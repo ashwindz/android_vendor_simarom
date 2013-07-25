@@ -1,11 +1,11 @@
-# Build with SELinux
-HAVE_SELINUX := true
-
-# Inherit AOSP device configuration for grouper.
-$(call inherit-product, device/lge/mako/full_mako.mk)
+#GCC
+TARGET_GCC_VERSION_EXP := 4.9
 
 # Inherit SaberMod common gsm bits
 $(call inherit-product, vendor/sm/configs/gsm.mk)
+
+# Inherit AOSP device configuration for grouper.
+$(call inherit-product, device/lge/mako/aosp_mako.mk)
 
 # Mako overlay
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -17,12 +17,12 @@ PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.2.2/JDQ39/573038:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.2.2 JDQ39 573038 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JWR66V/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JWR66V 737497 release-keys"
 
 # Extra packages specific to Mako
 PRODUCT_PACKAGES += \
-    GalleryGoogle-mako \
-    VideoEditorGoogle-mako \
+    Gallery2 \
+    VideoEditor \
     Torch
 
 # APN list
@@ -39,24 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
     vendor/sm/prebuilts/mako/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko
 endif
-
-#Prebuilt libs
-PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/mako/system/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
-    vendor/sm/prebuilts/mako/system/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
-    vendor/sm/prebuilts/mako/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
-    vendor/sm/prebuilts/mako/system/lib/liblightcycle.so:system/lib/liblightcycle.so \
-    vendor/sm/prebuilts/mako/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
-    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_core.so:system/lib/libvideoeditor_core.so \
-    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_jni.so:system/lib/libvideoeditor_jni.so \
-    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_osal.so:system/lib/libvideoeditor_osal.so \
-    vendor/sm/prebuilts/mako/system/lib/libvideoeditorplayer.so:system/lib/libvideoeditorplayer.so \
-    vendor/sm/prebuilts/mako/system/lib/libvideoeditor_videofilters.so:system/lib/libvideoeditor_videofilters.so \
-    vendor/sm/prebuilts/mako/system/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so
-
-# extra mako init.d scripts
-PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/mako/system/etc/init.d/01gallery:system/etc/init.d/01gallery
 
 # # remount scripts for system
 PRODUCT_COPY_FILES += \

@@ -1,6 +1,3 @@
-# GCC 4.9 SaberMod Toolchain
-USE_SABERMOD_ANDROIDEABI_49 := true
-
 # build.prop property overrides common
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -10,8 +7,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
-    ro.setupwizard.enterprise_mode=1 \
-    persist.sys.root_access=3
+    ro.setupwizard.enterprise_mode=1
 
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -100,9 +96,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit common build.prop overrides
 -include vendor/sm/configs/common_versions.mk
-
-# T-Mobile theme engine
--include vendor/sm/configs/themes_common.mk
 
 # Rom Manager and Goomanager build.prop overrides
 -include vendor/goomanager/goomanager-vendor.mk
