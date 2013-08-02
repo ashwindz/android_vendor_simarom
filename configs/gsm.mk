@@ -3,4 +3,4 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Stk
 
-$(call inherit-product, vendor/sm/configs/common.mk)
+$(call inherit-product, vendor/simarom/configs/common.mk)
