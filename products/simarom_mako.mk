@@ -11,27 +11,17 @@ $(call inherit-product, device/lge/mako/aosp_mako.mk)
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/sm/overlay/mako
 
-PRODUCT_NAME := sm_mako
+PRODUCT_NAME := simarom_mako
 PRODUCT_DEVICE := mako
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JWR66V/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JWR66V 737497 release-keys"
-
-# Extra packages specific to Mako
-PRODUCT_PACKAGES += \
-    Gallery2 \
-    VideoEditor \
-    Torch
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JSS15J/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JSS15J 737497 release-keys"
 
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/sm/prebuilts/mako/system/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-# Boot animation
-PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/mako/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Kernel modules
 ifeq ($(USING_BUILD_SCRIPTS),true)
