@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1
+    persist.sys.root_access=3
 
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
