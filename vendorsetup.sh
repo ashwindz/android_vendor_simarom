@@ -1,8 +1,2 @@
-add_lunch_combo sm_grouper-userdebug
-add_lunch_combo sm_grouper-user
-add_lunch_combo sm_mako-userdebug
-add_lunch_combo sm_mako-user
-add_lunch_combo sm_tilapia-userdebug
-add_lunch_combo sm_tilapia-user
-add_lunch_combo sm_manta-userdebug
-add_lunch_combo sm_manta-user
+add_lunch_combo simarom_mako-userdebug
+add_lunch_combo simarom_mako-user
