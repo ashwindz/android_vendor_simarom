@@ -1,5 +1,5 @@
 #GCC
-TARGET_GCC_VERSION_EXP := 4.9
+TARGET_GCC_VERSION_EXP := 4.7
 
 # Inherit SaberMod common gsm bits
 $(call inherit-product, vendor/simarom/configs/gsm.mk)
