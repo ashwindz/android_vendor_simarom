@@ -11,7 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.adb.secure=1
+    ro.adb.secure=0
 
 ifeq ($(HAVE_SELINUX),true)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -40,66 +40,44 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Apollo \
     audio_effects.conf \
     bash \
     Basic \
-    CMFileManager \
-    com.tmobile.themes \
-    DSPManager \
     e2fsck \
     mke2fs \
     tune2fs \
     htop \
-    libcyanogen-dsp \
-    libjackpal-androidterm4 \
     libssh \
-    LockClock \
     nano \
     openvpn \
     powertop \
     scp \
-    sftp \
     ssh \
     sshd \
     sshd_config \
     ssh-keygen \
     Superuser \
     su \
-    Term \
-    vim \
-    WallpaperZ
+    Term 
 
 # sysinit support
 PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/common/system/bin/sysinit:system/bin/sysinit
+    vendor/simarom/prebuilts/common/system/bin/sysinit:system/bin/sysinit
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/common/system/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+    vendor/simarom/prebuilts/common/system/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # Busybox sync script
 PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/common/system/etc/init.d/99complete:system/etc/init.d/99complete
-
-# Extra init file
-PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/common/system/etc/init.local.rc:root/init.sm.rc
+    vendor/simarom/prebuilts/common/system/etc/init.d/99complete:system/etc/init.d/99complete
 
 # Allow fixing of permissions
 PRODUCT_COPY_FILES += \
-    vendor/sm/prebuilts/common/system/bin/fix_permissions:system/bin/fix_permissions
-
-# SaberMod banner
-PRODUCT_COPY_FILES += \
-   vendor/sm/prebuilts/common/system/etc/init.d/00banner:system/etc/init.d/00banner
+    vendor/simarom/prebuilts/common/system/bin/fix_permissions:system/bin/fix_permissions
 
 # Inherit common build.prop overrides
--include vendor/sm/configs/common_versions.mk
-
-# Rom Manager and Goomanager build.prop overrides
--include vendor/goomanager/goomanager-vendor.mk
--include vendor/RM/rm-vendor.mk
+-include vendor/simarom/configs/common_versions.mk
 
 # video files and extra camera effects
 -include frameworks/base/data/videos/VideoPackage2.mk
