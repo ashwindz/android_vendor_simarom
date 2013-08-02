@@ -76,8 +76,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/simarom/prebuilts/common/system/bin/fix_permissions:system/bin/fix_permissions
 
-# Inherit common build.prop overrides
--include vendor/simarom/configs/common_versions.mk
 
 # video files and extra camera effects
 -include frameworks/base/data/videos/VideoPackage2.mk
