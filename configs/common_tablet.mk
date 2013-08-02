@@ -1,5 +1,5 @@
 # Inherit common stuff
-$(call inherit-product, vendor/sm/configs/common.mk)
+$(call inherit-product, vendor/simarom/configs/common.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/sm/overlay/tablet
+    vendor/simarom/overlay/tablet
