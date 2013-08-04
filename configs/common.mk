@@ -25,7 +25,7 @@ endif
 
 # Overlay common
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/sm/overlay/common
+    vendor/simarom/overlay/common
 
 # Superuser koush
 SUPERUSER_EMBEDDED := true
