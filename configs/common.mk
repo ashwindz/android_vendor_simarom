@@ -10,6 +10,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1
     persist.sys.root_access=3
 
+	# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/simarom/prebuilts/common/etc/init.simarom.rc:root/init.simarom.rc
+	
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0

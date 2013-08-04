@@ -1,0 +1,16 @@
+# Extras
+
+# su daemon
+service su_daemon /system/xbin/su --daemon
+    class main
+    oneshot
+    
+on boot
+    start su_daemon
+    # Run sysinit
+    start sysinit
+    
+# sysinit (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    user root
+    oneshot
