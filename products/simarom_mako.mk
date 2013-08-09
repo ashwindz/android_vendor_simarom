@@ -11,7 +11,7 @@ $(call inherit-product, device/lge/mako/aosp_mako.mk)
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/simarom/overlay/mako
 
-PRODUCT_NAME := simarom_mako
+PRODUCT_NAME := knm_mako
 PRODUCT_DEVICE := mako
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
