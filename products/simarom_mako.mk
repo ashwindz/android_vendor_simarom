@@ -8,9 +8,11 @@ $(call inherit-product, vendor/simarom/configs/gsm.mk)
 $(call inherit-product, device/lge/mako/aosp_mako.mk)
 
 # Mako overlay
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/simarom/overlay/mako
+PRODUCT_PACKAGE_OVERLAYS += vendor/simarom/overlay/mako
 
+# Common dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/simarom/overlay/dictionaries
+	
 PRODUCT_NAME := simarom_mako
 PRODUCT_DEVICE := mako
 PRODUCT_BRAND := Google

@@ -14,6 +14,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/simarom/prebuilts/common/etc/init.simarom.rc:root/init.simarom.rc
 	
+# Gesture enabled JNI
+PRODUCT_COPY_FILES += \
+    vendor/simarom/prebuilts/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+ 
+	
 # Enable ADB authentication
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
