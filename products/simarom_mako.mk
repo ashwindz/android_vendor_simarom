@@ -10,6 +10,7 @@ $(call inherit-product, device/lge/mako/aosp_mako.mk)
 # Mako overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/simarom/overlay/mako
 
+
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/simarom/overlay/dictionaries
 	
