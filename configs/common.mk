@@ -9,6 +9,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1
     persist.sys.root_access=3
+    ro.com.android.dataroaming=false \
+    ro.ril.hsxpa=5 \
+    ro.ril.gprsclass=12 \
+    ro.ril.hsdpa.category=24 \
+    ro.ril.hsupa.category=8 \
+    debug.sf.hw=1 \
+    debug.performance.tuning=1 \
+    video.accelerate.hw=1 \
+    windowsmgr.max_events_per_sec=360 \
+    ro.max.fling_velocity=30000 \
+    ro.min.fling_velocity=25000 \
+    dalvik.vm.dexopt-flags=v=a,o=v,u=y,m=y \
+    ro.HOME_APP_ADJ=1 \
+    ro.min_pointer_dur=8 \
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.verify-bytecode=false \
+    dalvik.vm.lockprof.threshold=850 \
+    persist.sys.purgeable_assets=1 \
+    ro.ril.power_collapse=1 \
+    pm.sleep_mode=1 \
+    wifi.supplicant_scan_interval=180 \
+    ro.kernel.android.checkjni=0 \
+    ro.kernel.checkjni=0 \
+    ro.config.nocheckin=1 \
+    ro.ext4fs=1 \
+    ro.config.hw_quickpoweron=true \
+    persist.sys.use_dithering=0 \
+    ro.telephony.call_ring.delay=0     
 
 	# init.d support
 PRODUCT_COPY_FILES += \
