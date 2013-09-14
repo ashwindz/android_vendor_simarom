@@ -20,8 +20,7 @@ PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JSS15Q/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JSS15Q 737497 release-keys"
-
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JWR66Y/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JWR66Y 737497 release-keys"
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/simarom/prebuilts/mako/system/etc/apns-conf.xml:system/etc/apns-conf.xml
